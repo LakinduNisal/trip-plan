@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trincomalee Family Adventure - November 10-11, 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 40px rgba(0,0,0,0.3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '🌴';
+            position: absolute;
+            font-size: 150px;
+            opacity: 0.1;
+            top: -30px;
+            left: 10%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        header::after {
+            content: '🌊';
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.1;
+            bottom: -20px;
+            right: 10%;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover {
+            background: #34495e;
+            border-bottom-color: #3498db;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .info-box {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-left: 5px solid #3498db;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .activity-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .time-badge {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .location-badge {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+
+        .cost-badge {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin: 0.3rem 0;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .pro-tip {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .pro-tip::before {
+            content: '💡 Pro Tip: ';
+            font-weight: bold;
+            color: #856404;
+        }
+
+        .checklist {
+            background: #d4edda;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .checklist ul {
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            nav ul { flex-direction: column; }
+            nav a { padding: 0.8rem; }
+            .checklist ul { columns: 1; }
+            h2 { font-size: 1.5rem; }
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 1.5rem;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+        }
+
+        .scroll-top:hover {
+            background: #2980b9;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌴 Trincomalee Family Adventure 🌊</h1>
+            <p class="subtitle">Complete 2-Day Trip Guide for 5 Members</p>
+            <p class="subtitle">November 10-11, 2025</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#essentials">Pre-Trip</a></li>
+                <li><a href="#day1">Day 1</a></li>
+                <li><a href="#day2">Day 2</a></li>
+                <li><a href="#budget">Budget</a></li>
+                <li><a href="#tips">Pro Tips</a></li>
+                <li><a href="#packing">Packing</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="essentials">
+                <h2>Pre-Trip Essentials</h2>
+                
+                <div class="highlight-box">
+                    <h3><span class="emoji">🚗</span> Journey Details</h3>
+                    <p><strong>Total Travel Distance:</strong> 227 km from Minuwangoda to Trincomalee</p>
+                    <p><strong>Driving Time:</strong> 3.5 to 4 hours</p>
+                    <p><strong>Best Route:</strong> Northern Expressway and A6 highway</p>
+                    <p><strong>Departure Time:</strong> 5:30 AM for optimal timing and less traffic</p>
+                </div>
+
+                <div class="info-box">
+                    <h3><span class="emoji">🌤️</span> November Weather in Trincomalee</h3>
+                    <ul>
+                        <li><strong>Daytime:</strong> 28-29°C (warm and sunny)</li>
+                        <li><strong>Nighttime:</strong> 24-26°C (cool)</li>
+                        <li><strong>Rainfall:</strong> Occasional showers with partly cloudy skies</li>
+                        <li><strong>Beach Conditions:</strong> Generally safe with calm waters</li>
+                    </ul>
+                </div>
+
+                <div class="checklist">
+                    <h3><span class="emoji">🎒</span> What to Pack for Your Family</h3>
+                    <ul>
+                        <li>Light rain jackets and umbrellas</li>
+                        <li>Sunscreen SPF 50+, hats, and sunglasses</li>
+                        <li>Swimwear for all family members, beach towels</li>
+                        <li>Modest clothing for temple visits (shoulders and knees covered)</li>
+                        <li>Comfortable walking shoes and sandals</li>
+                        <li>Camera for capturing memories</li>
+                        <li>Cash in LKR and USD (ATMs available in town)</li>
+                        <li>Kids' entertainment for the drive</li>
+                        <li>Basic medicines and first aid kit</li>
+                        <li>Reusable water bottles and snacks</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="day-header">
+                📅 Day 1: Sunday, November 10 - Welcome to Trincomalee
+            </div>
+
+            <section id="day1">
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 5:30 AM - 9:00 AM</span>
+                    <h3>🚗 Journey Begins from Minuwangoda</h3>
+                    <p><strong>Duration:</strong> 3.5-4 hours | <strong>Driving Route:</strong> A6 Highway North</p>
+                    <p>Begin your adventure early to beat traffic and maximize your time in Trincomalee. The drive is relatively straightforward along well-maintained highways. The kids can enjoy the changing landscape as you travel north through rural areas dotted with coconut plantations and villages.</p>
+                    <div class="pro-tip">Bring entertainment for the kids (portable music players, audiobooks, or games). Stop halfway at a rest area for refreshments (approximately after 2 hours).</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 11:00 AM - 12:00 PM</span>
+                    <h3>🏠 Arrival & Settle In</h3>
+                    <p>Arrive at your rented accommodation and check in. Let the kids explore the property and relax after the long drive. If your rental has a pool or beach access, let them have some time to decompress and familiarize themselves with the surroundings.</p>
+                    <p><strong>Accommodation Check:</strong> Ensure your accommodation has basic necessities like fans, water supply, and clean bathrooms.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 12:30 PM - 1:30 PM</span>
+                    <h3>🍛 First Lunch - Rice 'n' Curry Restaurant</h3>
+                    <span class="location-badge">📍 Sarvodaya Road, Uppuveli, Trincomalee</span>
+                    <span class="cost-badge">💰 LKR 2,000-3,000 per family</span>
+                    <p><strong>Phone:</strong> +94 76 936 4044</p>
+                    <p><strong>Rating:</strong> Traveler's Choice Award Winner</p>
+                    
+                    <p>Start your culinary journey at this highly-rated, authentic Sri Lankan restaurant. This is perfect for introducing your family to genuine Sri Lankan flavors in a welcoming atmosphere.</p>
+                    
+                    <h4>Recommended Dishes for Your Family:</h4>
+                    <ul>
+                        <li><strong>Hoppers (Egg Hoppers)</strong> - Crispy bowl-shaped pancakes with a perfectly cooked egg center</li>
+                        <li><strong>String Hoppers</strong> - Steamed rice noodle nests served with mild curry</li>
+                        <li><strong>Vegetable Curry with Rice</strong> - Great for kids</li>
+                        <li><strong>Grilled Fish</strong> - Fresh catch of the day</li>
+                        <li><strong>Fresh Lime Juice</strong> - Perfect cooling drink</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 2:00 PM - 3:30 PM</span>
+                    <h3>🏰 Fort Frederick - Historic Fortress & Deer Sanctuary</h3>
+                    <span class="location-badge">📍 Fort Frederick, Trincomalee</span>
+                    <span class="cost-badge">💰 $10 USD (approximately LKR 3,300) for 5 people</span>
+                    
+                    <p>Fort Frederick is a must-see, especially for kids! This 17th-century fortification offers a fascinating glimpse into colonial history with the added excitement of wild deer roaming freely throughout the grounds.</p>
+                    
+                    <h4>What to Experience:</h4>
+                    <ul>
+                        <li><strong>Historic Fortified Walls:</strong> Walk through well-preserved Portuguese, Dutch, and British-era structures</li>
+                        <li><strong>Wild Deer Feeding:</strong> The kids will love spotting and photographing spotted deer grazing openly</li>
+                        <li><strong>Lookout Points:</strong> Panoramic views of the coastline and Trincomalee Harbor</li>
+                        <li><strong>Shade Trees:</strong> Large, ancient trees providing relief from the sun</li>
+                        <li><strong>Photo Opportunities:</strong> Picture-perfect moments with historical backdrops</li>
+                    </ul>
+                    
+                    <div class="pro-tip">The northern part of the fort has better maintained trails. Allow 90 minutes for leisurely exploration. Kids can safely approach the deer (they're accustomed to visitors). Bring some vegetables or fruit to feed them if allowed by locals.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 3:30 PM - 5:15 PM</span>
+                    <h3>🛕 Koneswaram Temple, Swami Rock & Lover's Leap</h3>
+                    <span class="location-badge">📍 Swami Rock, End of Fort Frederick peninsula</span>
+                    <span class="cost-badge">💰 Free | Dress Code: Modest (shoulders and knees covered)</span>
+                    
+                    <p><strong>Temple Timings:</strong> 6:00 AM - 12:00 noon, 4:00 PM - 8:00 PM</p>
+                    
+                    <p>This ancient Hindu temple perched dramatically on Swami Rock is one of Trincomalee's most iconic attractions. Dating back to the 5th century BC, it combines spirituality, history, and breathtaking views.</p>
+                    
+                    <h4>Historical Significance:</h4>
+                    <ul>
+                        <li>Sacred to Lord Shiva as one of the Pancha Ishwarams (five divine abodes)</li>
+                        <li>Built during the Early Chola and Pandyan periods</li>
+                        <li>Extensively damaged during invasions but beautifully restored</li>
+                    </ul>
+                    
+                    <h4>What Your Family Will See:</h4>
+                    <ul>
+                        <li><strong>Colorful Temple Architecture:</strong> Vibrant gopuram (tower) with intricate carvings</li>
+                        <li><strong>Swami Rock Cliff:</strong> Dramatic 100+ meter drop to the Indian Ocean with safety railings</li>
+                        <li><strong>Lover's Leap:</strong> The famous cliff where legend tells of a heartbroken Dutch woman who jumped</li>
+                        <li><strong>Ocean Vistas:</strong> On clear days, you might spot whales migrating through the waters</li>
+                        <li><strong>Spiritual Atmosphere:</strong> The serene energy makes it a perfect place for family reflection</li>
+                    </ul>
+                    
+                    <h4>Temple Etiquette:</h4>
+                    <ul>
+                        <li>Remove shoes before entering sacred areas (or check at entrance)</li>
+                        <li>Women should cover shoulders and knees</li>
+                        <li>Photography allowed in most areas (check for restrictions)</li>
+                        <li>Be respectful of worshippers</li>
+                        <li>Kids learn about different cultures and religions</li>
+                    </ul>
+                    
+                    <div class="pro-tip">The panoramic views at sunset are absolutely stunning. The hike to the top has gentle slopes suitable for kids. Bring water - there are no shops nearby.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 5:30 PM - 7:00 PM</span>
+                    <h3>🏖️ Dutch Bay Beach - Family Beach Time</h3>
+                    <span class="location-badge">📍 Dockyard Road, Trincomalee town center</span>
+                    <span class="cost-badge">💰 Free | Lifeguards: Yes</span>
+                    
+                    <p>Dutch Bay is the main town beach offering calm, crystal-clear waters perfect for family swimming. It's the ideal place for your kids to experience Trincomalee's pristine coastline.</p>
+                    
+                    <h4>Why It's Perfect for Families:</h4>
+                    <ul>
+                        <li><strong>Calm Waters:</strong> Gentle waves, especially in the northern part</li>
+                        <li><strong>Safety:</strong> Lifeguards on duty in designated swimming areas</li>
+                        <li><strong>Clean Beach:</strong> Well-maintained by local authorities</li>
+                        <li><strong>Accessibility:</strong> Easy walk from restaurants and shops</li>
+                        <li><strong>Scenic Setting:</strong> Palm trees and traditional fishing boats add authentic charm</li>
+                    </ul>
+                    
+                    <h4>Activities:</h4>
+                    <ul>
+                        <li>Family swimming and water play</li>
+                        <li>Beach walks and sandcastle building</li>
+                        <li>Watching local fishermen return with their catch</li>
+                        <li>Photographing colorful traditional boats</li>
+                    </ul>
+                    
+                    <div class="pro-tip">Visit in late afternoon for fewer crowds. The northern section near Fernando's village is cleaner and more organized.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 7:30 PM - 9:00 PM</span>
+                    <h3>🦐 Dinner - ISSO Prawn Crazy</h3>
+                    <span class="location-badge">📍 Dockyard Road, Trincomalee</span>
+                    <span class="cost-badge">💰 LKR 3,500-5,000 per family</span>
+                    
+                    <p><strong>Phone:</strong> +94 11 7 770300</p>
+                    <p><strong>Rating:</strong> 4.9/5 on TripAdvisor (141 reviews)</p>
+                    <p><strong>Specialty:</strong> Fresh prawns and crab curry</p>
+                    
+                    <p>End your first day with an exceptional seafood dinner. ISSO is famous for their specialty seafood dishes and commitment to using fresh, locally-sourced ingredients.</p>
+                    
+                    <h4>Must-Try Dishes:</h4>
+                    <ul>
+                        <li><strong>King Prawn Curry</strong> - Succulent prawns in aromatic coconut-based sauce</li>
+                        <li><strong>Crab Curry (Sri Lankan style)</strong> - Rich, flavorful curry with fresh lagoon crabs</li>
+                        <li><strong>Jaffna Crab Curry</strong> - Fiery and authentic Northern Sri Lankan specialty</li>
+                        <li><strong>Grilled Seafood Platter</strong> - Mixed fresh catch with rice</li>
+                        <li><strong>Vegetable Dishes</strong> - For non-seafood preferences</li>
+                        <li><strong>Fresh Tropical Juices</strong> - Mango, papaya, or passion fruit</li>
+                    </ul>
+                    
+                    <p><strong>Atmosphere:</strong> Family-friendly with beachfront seating. The enthusiastic staff ensures your kids feel welcome.</p>
+                    <p><strong>Booking:</strong> Recommended on weekends</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 9:00 PM - 9:30 PM</span>
+                    <h3>🏠 Return to Accommodation</h3>
+                    <p>Head back to your rented house for rest. The kids will likely be excited and tired from the day's adventures. Let them share their favorite moments while you settle in for the night. Early sleep is recommended for Day 2's full schedule.</p>
+                </div>
+            </section>
+
+            <div class="day-header">
+                📅 Day 2: Monday, November 11 - Beach Bliss & Natural Wonders
+            </div>
+
+            <section id="day2">
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 8:00 AM - 9:30 AM</span>
+                    <h3>🏖️ Marble Beach - Pristine Coastal Gem</h3>
+                    <span class="location-badge">📍 Air Force Base Area, Nilaveli Road (about 14 km from town center)</span>
+                    <span class="cost-badge">💰 Free (within Air Force-maintained grounds)</span>
+                    
+                    <p>Marble Beach is often called the most beautiful beach in Trincomalee. Named for its smooth, marble-like white sand, it offers a postcard-perfect setting.</p>
+                    
+                    <h4>What Makes It Special for Families:</h4>
+                    <ul>
+                        <li><strong>Pristine White Sand:</strong> Extremely fine, smooth particles perfect for barefoot walking</li>
+                        <li><strong>Crystal-Clear Waters:</strong> Shallow and calm, ideal for kids' swimming</li>
+                        <li><strong>Minimal Crowds:</strong> Unlike popular southern beaches, it's peaceful and relaxed</li>
+                        <li><strong>Palm Tree Shade:</strong> Natural shade for protection from tropical sun</li>
+                        <li><strong>Protected Reef:</strong> Snorkeling opportunities for adventurous families</li>
+                    </ul>
+                    
+                    <h4>Activities:</h4>
+                    <ul>
+                        <li>Swimming in shallow, warm waters</li>
+                        <li>Building sandcastles with the kids</li>
+                        <li>Photography of the stunning landscape</li>
+                        <li>Relaxing under palm trees</li>
+                        <li>Collecting shells and exploring tide pools</li>
+                    </ul>
+                    
+                    <h4>Optional Adventure:</h4>
+                    <ul>
+                        <li><strong>Diamond Hill Hike:</strong> A moderate 1-hour hike next to Marble Beach with panoramic views</li>
+                        <li><strong>Snorkeling:</strong> See tropical fish and potential sea turtle sightings</li>
+                    </ul>
+                    
+                    <div class="pro-tip">Bring plenty of sunscreen and hats. There are no shops on the beach - bring water and snacks. The restaurant on-site (Ralla Restaurant) offers fresh seafood if you prefer dining there.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 9:30 AM - 12:00 PM</span>
+                    <h3>🌊 Nilaveli Beach - Extended Beach Experience</h3>
+                    <span class="location-badge">📍 Nilaveli Beach, North of Trincomalee</span>
+                    <span class="cost-badge">💰 Free | Facilities: Beach vendors, restaurants nearby</span>
+                    
+                    <p>Move on to Nilaveli Beach for extended family beach time. Known for its pristine conditions and family-friendly atmosphere, this is the east coast's best beach for families with young children.</p>
+                    
+                    <h4>Why Kids Love Nilaveli:</h4>
+                    <ul>
+                        <li><strong>Gentle Sloping Waters:</strong> Kids can wade safely for extended distances</li>
+                        <li><strong>Crystal-Clear Lagoon:</strong> Perfect for spotting fish and marine life</li>
+                        <li><strong>Palm-Lined Shores:</strong> Abundant natural shade throughout the beach</li>
+                        <li><strong>Peaceful Atmosphere:</strong> Less crowded than southern beaches</li>
+                        <li><strong>Fine White Sand:</strong> Comfortable for extended beach play</li>
+                    </ul>
+                    
+                    <h4>Recommended Activities:</h4>
+                    <ul>
+                        <li><strong>Extended Swimming:</strong> Safe waters perfect for kids to splash and play</li>
+                        <li><strong>Snorkeling (Optional):</strong> For families interested in marine life</li>
+                        <li><strong>Beach Games:</strong> Volleyball, frisbee, or simple games</li>
+                        <li><strong>Sunbathing & Relaxation:</strong> While kids build sand creations</li>
+                        <li><strong>Photography:</strong> Capture your family in this paradise setting</li>
+                    </ul>
+                    
+                    <div class="pro-tip">Bring floaties or water wings for younger children. Pack a cooler with cold drinks and snacks. Apply waterproof sunscreen every 2 hours. The morning hours (9:30 AM-12:00 PM) are ideal before the sun gets too intense.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 12:00 PM - 1:30 PM</span>
+                    <h3>🍽️ Lunch - Trinco Lanka Restaurant</h3>
+                    <span class="location-badge">📍 21 Alles Garden, Uppuveli, Trincomalee</span>
+                    <span class="cost-badge">💰 LKR 2,500-3,500 per family</span>
+                    
+                    <p><strong>Rating:</strong> 4.7/5 on TripAdvisor (482 reviews)</p>
+                    <p><strong>Specialty:</strong> Authentic Sri Lankan & Seafood</p>
+                    
+                    <p>Return to Uppuveli for lunch at this beloved local favorite run by a friendly couple. It's the perfect mid-day refueling stop.</p>
+                    
+                    <h4>Why It's Great for Families:</h4>
+                    <ul>
+                        <li><strong>Spacious Dining:</strong> Comfortable seating for groups</li>
+                        <li><strong>Diverse Menu:</strong> Both seafood and non-seafood options</li>
+                        <li><strong>Vegetarian Friendly:</strong> Excellent vegetable curries for kids</li>
+                        <li><strong>Budget-Conscious:</strong> Great quality at reasonable prices</li>
+                        <li><strong>Authentic Atmosphere:</strong> Genuine Sri Lankan hospitality</li>
+                    </ul>
+                    
+                    <h4>Recommended Menu:</h4>
+                    <ul>
+                        <li><strong>Steak & Chips</strong> - For kids preferring familiar comfort food</li>
+                        <li><strong>Crab Curry</strong> - Fresh and flavorful</li>
+                        <li><strong>Fish Dishes</strong> - Multiple preparation styles available</li>
+                        <li><strong>Vegetable Curry</strong> - Mild options for kids</li>
+                        <li><strong>Kottu Roti</strong> - Interactive chopped roti stir-fry</li>
+                        <li><strong>Fresh Coconut Water</strong> - Natural, refreshing drink</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 2:00 PM - 3:30 PM</span>
+                    <h3>♨️ Kanniya Hot Springs - Unique Thermal Experience</h3>
+                    <span class="location-badge">📍 Kanniya, approximately 8 km south of Trincomalee</span>
+                    <span class="cost-badge">💰 LKR 50 per person (total LKR 250 for family)</span>
+                    
+                    <p><strong>Highlights:</strong> Seven ancient hot water springs</p>
+                    
+                    <p>This is one of Trincomalee's most unique attractions - a place where legend, geology, and relaxation converge. Perfect for an unusual experience the kids won't find anywhere else.</p>
+                    
+                    <h4>Historical & Cultural Significance:</h4>
+                    <ul>
+                        <li>According to ancient legend, King Ravana struck the earth with his sword, creating these springs 5,000 years ago</li>
+                        <li>Featured in the Ramayana, one of Hinduism's greatest epics</li>
+                        <li>Seven square-shaped ancient wells with naturally heated water</li>
+                        <li>Each well maintains temperatures around 42°C (108°F)</li>
+                    </ul>
+                    
+                    <h4>What Your Family Will Experience:</h4>
+                    <ul>
+                        <li><strong>Seven Distinct Wells:</strong> Each with slightly different temperatures and mineral composition</li>
+                        <li><strong>Clear Mineral Water:</strong> Pure natural springs that visitors can safely enter</li>
+                        <li><strong>Ancient Buddhist Site:</strong> Nearby ruins of an ancient monastery</li>
+                        <li><strong>Healing Legends:</strong> Locals believe the water has therapeutic properties for skin conditions</li>
+                    </ul>
+                    
+                    <h4>Family Activities:</h4>
+                    <ul>
+                        <li><strong>Symbolic Water Immersion:</strong> Dip hands and feet in the warm mineral water</li>
+                        <li><strong>Photography:</strong> The dramatic well structures make for unique photos</li>
+                        <li><strong>Cultural Learning:</strong> Kids learn about Sri Lankan history and mythology</li>
+                        <li><strong>Peaceful Atmosphere:</strong> Serene surroundings for family reflection</li>
+                    </ul>
+                    
+                    <h4>What to Bring:</h4>
+                    <ul>
+                        <li>Extra clothes for changing (water is only waist-deep)</li>
+                        <li>Waterproof bags for valuables</li>
+                        <li>Towels</li>
+                        <li>Shower shoes (slippery rocks)</li>
+                    </ul>
+                    
+                    <div class="pro-tip">The wells are shallow (3-4 feet), making them safe for kids. The best time to visit is mid-afternoon when fewer tourists are present. This is a relatively short activity but creates memorable experiences.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 3:30 PM - 4:30 PM</span>
+                    <h3>⚓ Navy Museum - Military History & Panoramic Views</h3>
+                    <span class="location-badge">📍 Naval Dockyard, Trincomalee</span>
+                    <span class="cost-badge">💰 Free (donations appreciated - LKR 500-1,000)</span>
+                    
+                    <p><strong>Highlight:</strong> Hood Tower with 360° panoramic views</p>
+                    
+                    <p>The Navy Museum is located within the historic Naval Dockyard and offers fascinating insights into Sri Lankan maritime military history. The museum's real treasure is Hood Tower, which provides stunning views of the entire Trincomalee harbor.</p>
+                    
+                    <h4>Historical Context:</h4>
+                    <ul>
+                        <li>Located in the 17th-century Hood Tower, named after Admiral Sir Samuel Hood</li>
+                        <li>Served as a command post for the British Royal Navy during WWII</li>
+                        <li>Recently renovated to preserve its historical significance</li>
+                    </ul>
+                    
+                    <h4>What Your Family Will See:</h4>
+                    <ul>
+                        <li><strong>Naval Artifacts:</strong> Maps, uniforms, historical weapons, and ammunition collections</li>
+                        <li><strong>Ship Models & Equipment:</strong> Displays showing naval evolution</li>
+                        <li><strong>LTTE Artifacts:</strong> Captured items from historical conflicts</li>
+                        <li><strong>Hood Tower Interior:</strong> Historical memorabilia and documents</li>
+                        <li><strong>Panoramic Views:</strong> From the tower top - 360° vistas of harbor, city, and ocean</li>
+                    </ul>
+                    
+                    <h4>Why It's Perfect for Families:</h4>
+                    <ul>
+                        <li><strong>Educational:</strong> Kids learn about history in an interactive setting</li>
+                        <li><strong>Unique Perspective:</strong> View Trincomalee from this historic vantage point</li>
+                        <li><strong>Engineering Marvel:</strong> The tower's construction is impressive for all ages</li>
+                        <li><strong>Reasonable Duration:</strong> Can be explored in about 1 hour</li>
+                    </ul>
+                    
+                    <div class="pro-tip">Climb the tower early in your visit (narrow spiral stairs). Photography from the top is exceptional for sunset views. The museum staff is knowledgeable and helpful. Free entry makes it a budget-friendly cultural stop.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 6:00 PM - 7:30 PM</span>
+                    <h3>🌅 Uppuveli Beach Sunset - Magical Coastal Hour</h3>
+                    <span class="location-badge">📍 Sarvodaya Road, Uppuveli, Trincomalee</span>
+                    <span class="cost-badge">💰 Free</span>
+                    
+                    <p><strong>Best Time:</strong> 6:00-7:30 PM for perfect sunset viewing</p>
+                    
+                    <p>End your Trincomalee adventure with an unforgettable sunset experience at Uppuveli Beach, the most popular beach among tourists and the perfect place to reflect on your family's memories.</p>
+                    
+                    <h4>Why Uppuveli at Sunset is Special:</h4>
+                    <ul>
+                        <li><strong>Golden Hour Light:</strong> Perfect photography conditions for family photos</li>
+                        <li><strong>Calm Waters:</strong> The ocean is typically at its most serene during sunset</li>
+                        <li><strong>Local Atmosphere:</strong> Mixed with other travelers creating a cosmopolitan vibe</li>
+                        <li><strong>Beach Amenities:</strong> Multiple beachside restaurants and bars available</li>
+                    </ul>
+                    
+                    <h4>Activities Your Family Can Enjoy:</h4>
+                    <ul>
+                        <li><strong>Sunset Photography:</strong> Capture the sun dipping into the Indian Ocean</li>
+                        <li><strong>Beach Stroll:</strong> Walk along the golden sand as day transitions to night</li>
+                        <li><strong>Water Play:</strong> Final splash and swim before departure</li>
+                        <li><strong>Reflection Time:</strong> Sit with family watching the sky change colors</li>
+                        <li><strong>Beach Games:</strong> Kids can play while you watch the horizon</li>
+                    </ul>
+                    
+                    <h4>Perfect Photo Ops:</h4>
+                    <ul>
+                        <li>Family silhouettes against the sunset</li>
+                        <li>Kids playing in the shallow water</li>
+                        <li>The entire family on the beach</li>
+                        <li>Palm trees framed by sunset colors</li>
+                    </ul>
+                    
+                    <div class="pro-tip">Position yourself for sunset photos 15-20 minutes before actual sunset. The light is most dramatic 10 minutes before and after sunset.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 7:30 PM - 9:00 PM</span>
+                    <h3>🍴 Dinner - Rea Beach Restaurant (by Nero Kitchen)</h3>
+                    <span class="location-badge">📍 195 Alles Garden, Uppuveli, Trincomalee</span>
+                    <span class="cost-badge">💰 LKR 3,500-5,000 per family</span>
+                    
+                    <p><strong>Phone:</strong> +94 72 845 6629</p>
+                    <p><strong>Rating:</strong> 5/5 on TripAdvisor</p>
+                    <p><strong>Specialty:</strong> Beachfront dining with fresh seafood & international cuisine</p>
+                    
+                    <p>Complete your trip with dinner at this perfectly-rated beachfront restaurant. Known for its fresh ingredients, warm service, and stunning beach views.</p>
+                    
+                    <h4>Why It's the Perfect Final Meal:</h4>
+                    <ul>
+                        <li><strong>Perfect Rating:</strong> Consistently excellent reviews from travelers</li>
+                        <li><strong>Fresh Seafood:</strong> Daily catch prepared to perfection</li>
+                        <li><strong>Beachfront Setting:</strong> Dine with ocean breezes and sea views</li>
+                        <li><strong>Family Portions:</strong> Generous servings suitable for all ages</li>
+                        <li><strong>International Options:</strong> Not just seafood if preferences vary</li>
+                    </ul>
+                    
+                    <h4>Recommended Menu Items:</h4>
+                    <ul>
+                        <li><strong>Fresh Fish & Chips:</strong> Crispy, perfectly seasoned</li>
+                        <li><strong>Crab Specialties:</strong> Various preparations available</li>
+                        <li><strong>Pasta Dishes:</strong> Italian-influenced options for variety</li>
+                        <li><strong>Prawn Curry:</strong> Traditional Sri Lankan flavor</li>
+                        <li><strong>Vegetable Options:</strong> For non-seafood family members</li>
+                        <li><strong>Fresh Fruit Juices:</strong> Natural, refreshing drinks</li>
+                        <li><strong>Homemade Desserts:</strong> Save room for treats</li>
+                    </ul>
+                    
+                    <p><strong>Perfect Atmosphere:</strong> As the sun sets, the restaurant transitions to evening lighting. The ambiance is perfect for a memorable family dinner - not too loud, yet vibrant enough to feel festive.</p>
+                    
+                    <p><strong>Booking:</strong> Recommended for group of 5</p>
+                    
+                    <div class="pro-tip">Request a table with ocean views when you arrive or make your reservation.</div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 9:00 PM - 9:30 PM</span>
+                    <h3>🚗 Departure for Minuwangoda</h3>
+                    <p>Say goodbye to beautiful Trincomalee and begin your night journey home. The kids can sleep during the drive, making this the most convenient time for family travel. The cooler evening temperatures make night driving more comfortable.</p>
+                </div>
+
+                <div class="activity-card">
+                    <span class="time-badge">⏰ 12:30 AM - 1:00 AM</span>
+                    <h3>🏠 Arrival in Minuwangoda</h3>
+                    <p>Arrive home around midnight to early morning. Everyone can rest and reflect on an absolutely unforgettable family adventure!</p>
+                </div>
+            </section>
+
+            <section id="budget">
+                <h2>💰 Family Budget Breakdown for November 10-11 Trip</h2>
+                
+                <div class="info-box">
+                    <h3>Transportation</h3>
+                    <ul>
+                        <li>Car rental/taxi (Minuwangoda↔Trincomalee): LKR 10,000-15,000 round-trip</li>
+                        <li>Tuk-tuks in Trincomalee: LKR 500-1,000 per trip (15-20 trips estimated)</li>
+                        <li><strong>Subtotal: LKR 17,500-25,000</strong></li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Accommodation</h3>
+                    <ul>
+                        <li>Rented house for 1 night: Variable (as per your booking)</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Activities & Attractions</h3>
+                    <ul>
+                        <li>Fort Frederick (5 people): LKR 2,500</li>
+                        <li>Kanniya Hot Springs (5 people): LKR 250</li>
+                        <li>Navy Museum: Free/voluntary donation LKR 500</li>
+                        <li>Beaches: Free</li>
+                        <li><strong>Subtotal: LKR 3,250</strong></li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Meals</h3>
+                    <ul>
+                        <li>Breakfast en route: LKR 1,000-2,000</li>
+                        <li>Lunch Day 1: LKR 2,500-3,000</li>
+                        <li>Dinner Day 1: LKR 4,000-5,000</li>
+                        <li>Breakfast Day 2: LKR 1,000-2,000</li>
+                        <li>Lunch Day 2: LKR 3,000-3,500</li>
+                        <li>Dinner Day 2: LKR 4,000-5,000</li>
+                        <li>Snacks & drinks: LKR 2,000-3,000</li>
+                        <li><strong>Subtotal: LKR 17,500-23,500</strong></li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Total Estimated Cost</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold;">LKR 38,250-51,750</p>
+                    <p>(approximately USD 130-175 for entire family)</p>
+                </div>
+            </section>
+
+            <section id="tips">
+                <h2>🎯 Pro Tips for Making Your Trip Unforgettable</h2>
+                
+                <div class="activity-card">
+                    <h3>📸 Photography & Memory-Making</h3>
+                    <ul>
+                        <li>Take photos at each location but also put the camera down to live in the moment</li>
+                        <li>Create a family video diary of the kids' reactions at each place</li>
+                        <li>Collect small souvenirs (shells, local handicrafts)</li>
+                        <li>Keep a simple journal noting favorite moments</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <h3>👶 With Young Children</h3>
+                    <ul>
+                        <li>Pack entertainment for drives (audiobooks, music, games)</li>
+                        <li>Take breaks when needed without rushing</li>
+                        <li>Let kids lead the pace at some activities</li>
+                        <li>Pack snacks for energy boosts</li>
+                        <li>Protect them from too much sun exposure</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <h3>🙏 Cultural Respect & Local Experiences</h3>
+                    <ul>
+                        <li>Learn basic Sinhala greetings</li>
+                        <li>Ask permission before photographing people</li>
+                        <li>Support family-run restaurants and shops</li>
+                        <li>Tip service staff (appreciated but not obligatory)</li>
+                        <li>Show respect at religious sites</li>
+                        <li>Interact with locals - they're generally warm and welcoming</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <h3>🛡️ Safety Reminders</h3>
+                    <ul>
+                        <li>Keep valuables secure at your accommodation</li>
+                        <li>Avoid solo nighttime walks beyond major tourist areas</li>
+                        <li>Stay hydrated in the tropical heat</li>
+                        <li>Use mosquito repellent, especially in evenings</li>
+                        <li>Follow lifeguard instructions at beaches</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <h3>🏊 Beach Safety for Kids</h3>
+                    <ul>
+                        <li>Supervise constantly, especially in water</li>
+                        <li>Use reef shoes to protect feet from sharp rocks</li>
+                        <li>Apply waterproof sunscreen every 2 hours</li>
+                        <li>Bring floaties/water wings for younger swimmers</li>
+                        <li>Teach kids not to wander off from parents</li>
+                    </ul>
+                </div>
+
+                <div class="activity-card">
+                    <h3>🍽️ Dining Tips</h3>
+                    <ul>
+                        <li>Try local restaurants for authentic flavors</li>
+                        <li>Ask about spice levels when ordering (kids might prefer milder options)</li>
+                        <li>Fresh fruit and coconuts are safe to eat</li>
+                        <li>Drink bottled water (widely available and inexpensive)</li>
+                        <li>Ice in drinks is generally safe in tourist areas</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="packing">
+                <h2>🎒 Packing Checklist for Day 2</h2>
+                
+                <div class="checklist">
+                    <ul>
+                        <li>Hat/cap for sun protection</li>
+                        <li>Sunglasses and sunscreen SPF 50+</li>
+                        <li>Swimwear and beach towels</li>
+                        <li>Change of clothes for beach activities</li>
+                        <li>Comfortable walking shoes</li>
+                        <li>Camera/smartphone with extra charger</li>
+                        <li>Reusable water bottles</li>
+                        <li>Snacks for beach time</li>
+                        <li>Light rain jacket (just in case)</li>
+                        <li>Medications and first aid kit</li>
+                        <li>Small bills for tips and small purchases</li>
+                        <li>Modest clothing for temple visits (just in case of change of plans)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>🍽️ Restaurants Quick Reference for Your Trip</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Restaurant</th>
+                            <th>Best For</th>
+                            <th>Cuisine</th>
+                            <th>Phone</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rice 'n' Curry</td>
+                            <td>Authentic introduction</td>
+                            <td>Sri Lankan</td>
+                            <td>+94 76 936 4044</td>
+                            <td>LKR 2,000-3,000</td>
+                        </tr>
+                        <tr>
+                            <td>ISSO - Prawn Crazy</td>
+                            <td>Premium seafood</td>
+                            <td>Seafood/Asian</td>
+                            <td>+94 11 7 770300</td>
+                            <td>LKR 3,500-5,000</td>
+                        </tr>
+                        <tr>
+                            <td>Trinco Lanka</td>
+                            <td>Local favorite</td>
+                            <td>Sri Lankan</td>
+                            <td>Local</td>
+                            <td>LKR 2,500-3,500</td>
+                        </tr>
+                        <tr>
+                            <td>Rea Beach Restaurant</td>
+                            <td>Perfect rating dining</td>
+                            <td>Seafood/International</td>
+                            <td>+94 72 845 6629</td>
+                            <td>LKR 3,500-5,000</td>
+                        </tr>
+                        <tr>
+                            <td>Be Cool Juice Bar</td>
+                            <td>Fresh juices</td>
+                            <td>Seafood/Juices</td>
+                            <td>Local</td>
+                            <td>LKR 1,500-2,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>✨ Why This Trip Will Be Unforgettable</h2>
+                
+                <div class="highlight-box">
+                    <p>This carefully curated 2-day itinerary captures the absolute essence of Trincomalee for families. Your children will experience:</p>
+                    
+                    <ul style="margin-top: 1rem;">
+                        <li><strong>Historic Adventures:</strong> Walking through a 400-year-old fortress while spotting wild deer</li>
+                        <li><strong>Spiritual Moments:</strong> Colorful temples with cliffside views overlooking the Indian Ocean</li>
+                        <li><strong>Beach Paradise:</strong> Three distinct beaches, each with its own character and charm</li>
+                        <li><strong>Unique Experiences:</strong> Dipping in ancient hot springs and exploring naval museums</li>
+                        <li><strong>Authentic Culture:</strong> Tasting genuine Sri Lankan cuisine and interacting with warm locals</li>
+                        <li><strong>Natural Beauty:</strong> Sunsets over pristine beaches, crystal-clear waters, and tropical landscapes</li>
+                        <li><strong>Quality Family Time:</strong> Moments of connection away from daily routines, creating lifelong memories</li>
+                    </ul>
+                    
+                    <p style="margin-top: 1rem;">Your family will return home not just with photos and stories, but with genuine understanding of Sri Lanka's coastal beauty, cultural richness, and warm hospitality. The combination of relaxation, adventure, history, and nature makes Trincomalee the perfect short getaway destination for families.</p>
+                    
+                    <p style="font-size: 1.3rem; margin-top: 1.5rem; text-align: center;"><strong>Get ready for an adventure that will be talked about for years to come! 🌴🐚🌅</strong></p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>🌴 Have an Amazing Family Adventure in Trincomalee! 🌊</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">November 10-11, 2025 | Created with ❤️ for your family</p>
+        </footer>
+    </div>
+
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button functionality
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add animation on scroll for activity cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.activity-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Add active state to navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.borderBottomColor = 'transparent';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.borderBottomColor = '#3498db';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
